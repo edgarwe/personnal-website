@@ -72,12 +72,19 @@ body{
     position: absolute;
     bottom: 0px;
     text-transform: uppercase;
-    padding-top: 2.4rem;
-    padding-right: 5rem;}
+    padding: 1.2rem 5rem 1.2rem 5px;
+}
 .details p {
     margin: 0px;
     font-size: .85rem;
 }
 .paged{
     color: var(--text-muted); 
+}
+.image-container{
+    box-shadow: 5px -4px 10px 0px #BDBDBD;
+    border-radius: 30px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px 15px;
 }
