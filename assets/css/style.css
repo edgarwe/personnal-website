@@ -82,7 +82,7 @@ body{
     color: var(--text-muted); 
 }
 .image-container{
-    box-shadow: 5px -4px 10px 0px #BDBDBD;
+    //box-shadow: 5px -4px 10px 0px #BDBDBD;
     border-radius: 30px;
     padding: 0px;
     overflow: hidden;
