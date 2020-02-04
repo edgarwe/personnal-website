@@ -3,7 +3,7 @@ require_once dirname(__FILE__) . '/require_all.php';
 
 get_block('header');
 ?>
-<div class="container home">
+<div class="container-fluid home">
     <div class="row">
         <div class="col-md-4 col-12 home-left">
             <p>Dubai, UAE</p>
@@ -24,7 +24,7 @@ get_block('header');
         </div>
         </div>
             
-        <header class="col-md-1 col-12">
+        <header class="header col-md-1 col-12">
             <?php get_block('nav'); ?>
         </header>
     </div>

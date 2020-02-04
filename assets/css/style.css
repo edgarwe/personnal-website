@@ -13,18 +13,43 @@ body{
     overflow: hidden;
     letter-spacing: 2px;
 }
-.nav{
+.header{
+    padding-left: 0px;
+}
+.navigation{
     align-items: center;
     height: 100%;
     justify-content: center;
 }
-.nav .burger, .nav .logo, .nav .socials{
+.navigation .burger, .navigation .logo, .navigation .socials{
     height: 33%;
-}
-.nav .socials{
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offcanvas{
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    transition: width 1s ease;
+}
+.offcanvas.active{
+    width: 100%;
+}
+.offcanvas .container-fluid, .offcanvas .row{
+    height: 100%;
+}
+.offcanvas .burger{
+    height: 33%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .home{
@@ -82,9 +107,10 @@ body{
     color: var(--text-muted); 
 }
 .image-container{
-    //box-shadow: 5px -4px 10px 0px #BDBDBD;
+    box-shadow: 5px -4px 10px 0px #BDBDBD;
     border-radius: 30px;
     padding: 0px;
     overflow: hidden;
     margin: 0px 15px;
+    height: 100%;
 }

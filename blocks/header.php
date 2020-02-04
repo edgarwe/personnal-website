@@ -4,3 +4,4 @@
     <?php get_block('head'); ?>
 </head>
 <body>
+<?php get_block('offcanvas'); ?>

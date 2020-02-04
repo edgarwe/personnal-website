@@ -1,7 +1,7 @@
-<aside class="nav">
-    <div class="burger"><img src="<?php echo get_img('burger.svg') ?>" alt="Icone burger"></div>
+<aside class="navigation">
+    <div data-toggle="offcanvas" class="burger"><img src="<?php echo get_img('burger.svg') ?>" alt="Icone burger"></div>
     <div class="logo">
-        <img src="<?php echo get_img('logo.png') ?>" alt="Mon superbe logo">
+        <img src="<?php echo get_img('logo.png') ?>" class="img-resp h-auto" alt="Mon superbe logo">
     </div>
     <div class="socials">
         <div class="network">
