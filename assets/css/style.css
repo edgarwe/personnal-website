@@ -54,9 +54,9 @@ body{
 }
 .home{
     height: 100vh;
-    width: 100%;
-    margin-top: 8vh;
-    margin-bottom: 8vh;
+    width: 90%;
+    margin: 8vh 5%;
+
 }
 .home .row {
     height: 84%;
@@ -74,6 +74,7 @@ body{
 }
 .prev-next .prev, .prev-next .next{
     position: relative;
+    cursor: pointer;
 }
 .prev-next .prev:after, .prev-next .next:after{
     content: " ";
@@ -106,11 +107,31 @@ body{
 .paged{
     color: var(--text-muted); 
 }
+.paged h2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.paged h2 .slick-dots li{
+    display: none;
+}
+.paged h2 .slick-dots li button{
+    background: none;
+    border: unset;
+    color: var(--text-muted);
+}
+.paged h2 .slick-dots .slick-active{
+    display: block;
+}
 .image-container{
     box-shadow: 5px -4px 10px 0px #BDBDBD;
     border-radius: 30px;
     padding: 0px;
     overflow: hidden;
     margin: 0px 15px;
+    height: 100%;
+}
+.slider{
+    width: 100%;
     height: 100%;
 }
