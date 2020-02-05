@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "cookieconsent": "3.0.4",
+        "font-awesome": "^4.7.0",
+        "animate.css": "^3.7.0"
+    },
+    "scripts": {
+        "dev": "node-sass --output-style compressed assets/scss/main.scss assets/dist/css/main.min.css --watch --source-map true",
+        "compile-sass": "node-sass assets/scss/main.scss assets/dist/css/style.comp.css",
+        "prefixer": "postcss assets/dist/css/style.comp.css --use autoprefixer -m --output assets/dist/css/style.prefixed.css",
+        "min": "node-sass --output-style compressed assets/dist/css/style.prefixed.css assets/dist/css/style.min.css",
+        "opt:css": "cleancss -O2 assets/dist/css/style.min.css -o assets/dist/css/style.min.css",
+        "build": "npm-run-all compile-sass prefixer min opt:css"
+    },
+    "keywords": "Personnal website",
+    "author": "Edgar",
+    "license": "CC-BY-3.0",
+    "devDependencies": {
+        "autoprefixer": "^9.7.2",
+        "clean-css-cli": "^4.3.0",
+        "node-sass": "^4.13.0",
+        "postcss-cli": "^6.1.3"
+    }
+}
