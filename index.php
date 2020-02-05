@@ -3,7 +3,7 @@ require_once dirname(__FILE__) . '/require_all.php';
 
 get_block('header');
 ?>
-<div class="container-fluid home">
+<div class="home">
     <div class="row">
         <div class="col-md-4 col-12 home-left">
             <h1 class="h6">Pellissier Edgar</h1>
@@ -16,8 +16,8 @@ get_block('header');
                 <div class="prev-next">
                 </div>
             </div>
-            <div class="paged">
-                <h2 class="animated fadeIn"> / <span class="count">2</span></h2>
+            <div class="paged animated fadeIn slow">
+                <h2 class=""> / <span class="count">2</span></h2>
             </div>
         </div>
         <div class="col-md-7 col-12">
