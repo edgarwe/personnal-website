@@ -3,7 +3,7 @@ require_once dirname(__FILE__) . '/require_all.php';
 
 get_block('header');
 ?>
-<div class="home">
+<div class="home animsition">
     <div class="row">
         <div class="col-md-4 col-12 home-left">
             <h1 class="h6">Pellissier Edgar</h1>
@@ -23,7 +23,7 @@ get_block('header');
         <div class="col-md-7 col-12">
         <div class="image-container">
             <div class="slider" data-slider="image">
-                <img src="<?php echo get_img('batiment1.jpg') ?>" lazyload="lazy" alt="image home" class="img-resp home-img">
+                <img src="<?php echo get_img('batiment1.jpg') ?>" alt="image home" class="img-resp home-img">
                 <img src="<?php echo get_img('batiment1.jpg') ?>" lazyload="lazy" alt="image home" class="img-resp home-img">
                 <img src="<?php echo get_img('batiment1.jpg') ?>" lazyload="lazy" alt="image home" class="img-resp home-img">
             </div>
@@ -57,5 +57,28 @@ $(document).ready(function(){
     asNavFor: '[data-slider=image]'
   });
   $('.count').replaceWith( $('.paged .slick-dots li').length );
+});
+
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'overlay-slide-in-right',
+    inDuration: 2500,
+    outDuration: 1000,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 1000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
 });
 </script>
