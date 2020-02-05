@@ -5,8 +5,8 @@
         "animate.css": "^3.7.0"
     },
     "scripts": {
-        "dev": "node-sass --output-style compressed assets/scss/main.scss assets/dist/css/main.min.css --watch --source-map true",
-        "compile-sass": "node-sass assets/scss/main.scss assets/dist/css/style.comp.css",
+        "dev": "node-sass --output-style compressed assets/src/scss/main.scss assets/dist/css/main.min.css --watch --source-map true",
+        "compile-sass": "node-sass assets/src/scss/main.scss assets/dist/css/style.comp.css",
         "prefixer": "postcss assets/dist/css/style.comp.css --use autoprefixer -m --output assets/dist/css/style.prefixed.css",
         "min": "node-sass --output-style compressed assets/dist/css/style.prefixed.css assets/dist/css/style.min.css",
         "opt:css": "cleancss -O2 assets/dist/css/style.min.css -o assets/dist/css/style.min.css",

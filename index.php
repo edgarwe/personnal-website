@@ -17,7 +17,7 @@ get_block('header');
                 </div>
             </div>
             <div class="paged">
-                <h2> / <span class="count">2</span></h2>
+                <h2 class="animated fadeIn"> / <span class="count">2</span></h2>
             </div>
         </div>
         <div class="col-md-7 col-12">
@@ -49,7 +49,7 @@ $(document).ready(function(){
     dots: true,
     appendDots: $('.paged h2'),
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 5000,
     asNavFor: '[data-slider=titre]'
   });
   $('[data-slider=titre]').slick({
