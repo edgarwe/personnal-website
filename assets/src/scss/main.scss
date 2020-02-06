@@ -1,6 +1,8 @@
 @import 'variables';
 
-  
+  .animsition{
+    height: 100%;
+  }
   .img-resp {
     width: 100%;
     height: 100%;
@@ -22,9 +24,8 @@
     align-items: center;
     height: 100%;
     justify-content: center;
-    position: fixed;
+    position: relative;
     top: 0px;
-    padding: 8vh 0px;
     .burger, .logo, .socials, .next-page {
       height: 25%;
       display: flex;
@@ -166,6 +167,7 @@
     overflow: hidden;
     margin: 0px 15px;
     height: 100%;
+    position: relative;
     .slick-list, .slick-track{
       height: 100%;
     }
