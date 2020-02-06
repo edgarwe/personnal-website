@@ -8,14 +8,9 @@ $(document).ready(function(){
         loading: true,
         loadingParentElement: 'body',
         loadingClass: 'animsition-loading',
-        loadingInner: '',
-        timeout: false,
-        timeoutCountdown: 1000,
+        loadingInner: '<img width="100" src="/assets/dist/images/logo.png" class="img-resp h-auto" alt="Mon superbe logo">',
         onLoadEvent: true,
         browser: [ 'animation-duration', '-webkit-animation-duration'],
-        overlay : false,
-        overlayClass : 'animsition-overlay-slide',
-        overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
     });
 

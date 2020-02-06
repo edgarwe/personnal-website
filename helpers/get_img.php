@@ -1,4 +1,5 @@
 <?php
-function get_img($img){
-    return '/assets/dist/images/'.$img;
+function get_img($img)
+{
+    return '/assets/dist/images/' . $img;
 }
