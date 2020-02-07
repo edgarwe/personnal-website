@@ -12,9 +12,7 @@
                 </ul>
             </div>
             <div class="col-md-1">
-                <div data-toggle="offcanvas" class="burger">
-                    <img src="<?php echo get_img('burger.svg') ?>" alt="Icone burger">
-                </div>
+                <?php echo get_block('nav'); ?> 
             </div>
         </div>
     </div>

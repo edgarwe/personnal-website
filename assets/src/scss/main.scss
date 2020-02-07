@@ -29,7 +29,7 @@ body {
   position: fixed;
   top: 0px;
   padding: 8vh 0px;
-
+  padding-right: 5px;
   .burger,
   .logo,
   .socials,
@@ -39,6 +39,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 75px;
   }
 
   .burger {

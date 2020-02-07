@@ -2,7 +2,7 @@
     <div data-toggle="offcanvas" class="burger"><img src="<?php echo get_img('burger.svg') ?>" alt="Icone burger"></div>
     <div class="logo">
         <a href="/" title="link to home page">
-            <img src="<?php echo get_img('logo.png') ?>" class="img-resp h-auto" alt="Mon superbe logo">
+            <svg class="img-resp h-auto" viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg"><circle cx="95" cy="95" fill="#333" r="95"/><text fill="#fff" font-family="MonotypeCorsiva, Monotype Corsiva" font-size="100" transform="translate(30.74 119.49)">EP</text></svg>
         </a>
     </div>
     <div class="socials">
