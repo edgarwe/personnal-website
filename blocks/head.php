@@ -3,6 +3,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>My website</title>
 <link rel="icon" href="/favicon.ico" />
+<script src="<?php echo get_assets('js/jquery.min.js') ?>" crossorigin="anonymous"></script>
+
 <!-- this is for pwa
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">

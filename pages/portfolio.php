@@ -3,8 +3,7 @@ require_once dirname(__DIR__) . '/require_all.php';
 
 get_block('header');
 ?>
-<div class="animsition-overlay" data-animsition-overlay="true">
-  <div class="container-fluid h-100 portfolio">
+  <div class="global_container container-fluid h-100 portfolio">
     <div class="row h-100">
       <div class="col-md-2">
         <h2 class="filtres_titre">filtres</h2>
@@ -14,7 +13,6 @@ get_block('header');
             <h2>Web</h2>
           </div>
           <div class="filtre">
-            
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path></svg>
             <h2>Design</h2>
           </div>
@@ -66,33 +64,6 @@ get_block('header');
       </header>
     </div>
   </div>
-</div>
 <?php
 get_block('footer');
 ?>
-<script>
-  $(document).ready(function () {
-    $(".animsition-overlay").animsition({
-      inClass: 'overlay-slide-in-right',
-      outClass: 'overlay-slide-out-right',
-      inDuration: 2500,
-      outDuration: 2000,
-      linkElement: '.animsition-link',
-      // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-      loading: true,
-      loadingParentElement: 'body', //animsition wrapper element
-      loadingClass: 'animsition-loading',
-      loadingInner: '', // e.g '<img src="loading.svg" />'
-      timeout: false,
-      timeoutCountdown: 1000,
-      onLoadEvent: true,
-      browser: ['animation-duration', '-webkit-animation-duration'],
-      overlay: false,
-      overlayClass: 'animsition-overlay-slide',
-      overlayParentElement: 'body',
-      transition: function (url) {
-        window.location.href = url;
-      }
-    });
-  });
-</script>

@@ -3,16 +3,15 @@ require_once dirname(__FILE__) . '/require_all.php';
 
 get_block('header');
 ?>
-<div class="animsition-overlay" data-animsition-overlay="true">
-    <div class="home">
+    <div class="global_container home">
         <div class="row">
             <div class="col-md-4 col-12 home-left">
                 <h1 class="h6">Voici mon nom</h1>
                 <div class="middle">
                     <div class="slider" data-slider="titre">
-                        <h1 class="main-title">Jumehira Villa</h1>
-                        <h1 class="main-title">Jumehira Villa 2</h1>
-                        <h1 class="main-title">Jumehira Villa 3</h1>
+                        <h2 class="main-title">Jumehira Villa</h2>
+                        <h2 class="main-title">Jumehira Villa 2</h2>
+                        <h2 class="main-title">Jumehira Villa 3</h2>
                     </div>
                     <div class="prev-next">
                     </div>
@@ -37,7 +36,6 @@ get_block('header');
             </header>
         </div>
     </div>
-</div>
 <?php
 get_block('footer');
 ?>
