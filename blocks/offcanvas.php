@@ -1,5 +1,5 @@
-<div class="offcanvas">
-    <div class="container-fluid">
+<div class="global_container offcanvas">
+
         <div class="row">
             <div class="col-md-11">
                 <ul>
@@ -11,9 +11,8 @@
                     <li>6</li>
                 </ul>
             </div>
-            <div class="col-md-1">
+            <div class="header col-md-1 col-12">
                 <?php echo get_block('nav'); ?> 
             </div>
         </div>
-    </div>
 </div>
