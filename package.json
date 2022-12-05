@@ -1,8 +1,8 @@
 {
     "dependencies": {
+        "animate.css": "^3.7.0",
         "cookieconsent": "3.0.4",
-        "font-awesome": "^4.7.0",
-        "animate.css": "^3.7.0"
+        "font-awesome": "^4.7.0"
     },
     "scripts": {
         "dev": "node-sass --output-style compressed assets/src/scss/main.scss assets/dist/css/main.min.css --watch --source-map true",
@@ -16,9 +16,10 @@
     "author": "Edgar",
     "license": "CC-BY-3.0",
     "devDependencies": {
-        "autoprefixer": "^9.7.2",
-        "clean-css-cli": "^4.3.0",
-        "node-sass": "^4.13.0",
-        "postcss-cli": "^6.1.3"
+        "autoprefixer": "^10.0.0",
+        "clean-css-cli": "^5.0.0",
+        "postcss": "^8.4.19",
+        "postcss-cli": "^10.0.0",
+        "sass": "^1.56.1"
     }
 }
